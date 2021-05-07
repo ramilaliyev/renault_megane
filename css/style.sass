@@ -1,0 +1,122 @@
+@import "gallery"
+@import "interesting"
+@import "footer"
+
+body
+    background: linear-gradient(147deg, #dedee0, #bfbdb9, #cbc3ba, #757071, #36363d)
+    font-family: "Trebuchet MS", Arial, sans-serif
+
+#content
+    background: #f8f9fa
+
+.navbar-brad
+    img
+        height: 60px
+        width: 80px
+
+header
+    height: 60px
+
+    li
+        padding-left: 1.8em !important
+
+        
+
+.img-here
+    transform: rotateZ(1.92deg) translateX(-1600px)
+    height: 300px
+    animation: show 4s forwards
+
+@keyframes show
+    100%
+        display: inline-block
+        transform: translateX(0px)
+
+.common
+    height: 300px
+
+.img-near
+    animation: show1 6s forwards
+    opacity: 0
+
+@keyframes show1
+    0%, 30%
+        opacity: 0
+    100% 
+        opacity: 1
+
+@media (max-width: 780px) 
+    .display-2 
+        font-size: 40px !important
+
+    .display-4
+        font-size: 40px !important
+
+    .gal-logo ,  .img-hide, .img-here
+        display: none
+    
+    .media-gal
+        display: inline-block
+        transform: translateX(70px)
+
+    #interesting
+        height: 650px !important
+
+    .img-near
+        animation: none
+        opacity: 1
+
+    .fa-money
+        transform: translate(0,0) scale(1) !important
+    
+    .media-fa-money
+        text-align: center !important
+
+    footer, .betw-in-foot
+        transform: translateY(190px)
+
+        .fa
+            font-size: 1.5em !important
+
+    .betw-foot-body
+        transform: translateY(-20px)
+
+    .btn-danger
+        display: inline-block
+        transform: translateX(20px)
+
+        &:active, &:hover
+            transform: translate(20px, 0px) !important
+    
+    footer
+        height: 300px
+
+
+
+
+@media (max-width: 1200px) 
+    @keyframes show 
+        transform: translateX(-30px)     
+
+    
+@media (max-width: 320px)
+    .end
+        transform: translateY(60px)
+    p
+        font-size: 12px
+
+@media (min-width: 750px)
+    @media (max-width: 785px)
+        .media-yout
+            padding: 4.45em
+
+            .btn-danger
+                transform: translateX(-20px)
+
+
+.size-img
+    padding: 5em
+
+html
+    scroll-behavior: smooth
+
